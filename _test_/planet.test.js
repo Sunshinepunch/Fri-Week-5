@@ -34,7 +34,12 @@ describe ('Human', () => {
     expect(human.myAge).toEqual(83.33);
   })
 
-  test()
+  test('should return age as 32.25', () => {
+    let human = new Human(20);
+    let human.myAge = myAge;
+    human.venusAge(myAge);
+    expect(human.myAge).toEqual(32.26);
+  })
 });
 
 
