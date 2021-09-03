@@ -1,4 +1,4 @@
-import { expect, test } from '@jest/globals';
+
 import {Human, roundToTwo } from '../src/planet.js';
 
 
@@ -6,11 +6,6 @@ import {Human, roundToTwo } from '../src/planet.js';
 describe ('Human', () => {
 
   test('should instantiate class Human', () => {
-    class Human {
-      constructor(myAge) {
-        this.myAge= myAge;
-      }
-    }
     let human = new Human();
     expect(human).toBeDefined();
   })
@@ -28,16 +23,14 @@ describe ('Human', () => {
 
   test('should return age as 83.33', () => {
     let human = new Human(20);
-    let mercAge = human.myAge / 0.24;
-    human.myAge = roundToTwo(mercAge);
+    human.mercuryAge();
     // console.log(human.myAge)
     expect(human.myAge).toEqual(83.33);
   })
 
   test('should return age as 32.25', () => {
     let human = new Human(20);
-    let human.myAge = myAge;
-    human.venusAge(myAge);
+    human.venusAge();
     expect(human.myAge).toEqual(32.26);
   })
 });
