@@ -71,12 +71,12 @@ describe ('Human', () => {
     expect(result).toEqual(241.67);
   })
 
-  test('should return LE of -4.17', () => {
+  test('should return LE of -4.170000000000016', () => {
     let human = new Human(79, 78);
     let mercLE = human.mercuryLE();
     let mercAge = human.mercuryAge();
-    let result = timeLeft(mercLE, mercAge);
-    expect(result).toEqual(-4.17);
+    let result = mercLE - mercAge;
+    expect(result).toEqual(-4.170000000000016);
   })
 
   test('should return console statement and 4.17', () => {
@@ -84,7 +84,7 @@ describe ('Human', () => {
     let mercLE = human.mercuryLE();
     let mercAge = human.mercuryAge();
     let result = timeLeft(mercLE, mercAge);
-    expect(result).toEqual(-4.17);
+    expect(result).toEqual(4.17);
   })
 });
 

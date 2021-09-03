@@ -48,8 +48,9 @@ export function timeLeft(myLE,myAge) {
   }else if (time > 0) {
     return time;
   }else if (time <= 0) {
-    console.log("Yikes. You would have died" + Math.abs(time));
+    console.log("Yikes. You would have died " + Math.abs(time) + " years ago.");
   }
+  return Math.abs(time);
 }
 
 
