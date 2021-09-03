@@ -8,6 +8,10 @@
     "lint": "eslint src/*.js",
     "test": "jest --coverage"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sunshinepunch/Fri-Week-5"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
