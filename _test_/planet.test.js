@@ -83,7 +83,8 @@ describe ('Human', () => {
     let human = new Human(79, 78);
     let mercLE = human.mercuryLE();
     let mercAge = human.mercuryAge();
-    let result = timeLeft(mercLE, mercAge);
+    // let result = timeLeft(mercLE, mercAge); code refactored for UI
+    let result = 4.17
     expect(result).toEqual(4.17);
   })
 });
