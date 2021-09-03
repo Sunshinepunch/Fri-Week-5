@@ -6,8 +6,8 @@ describe ('Human', () => {
 
   test('should instantiate class Human', () => {
     class Human {
-      constructor() {
-        this.myAge= myAge
+      constructor(myAge) {
+        this.myAge= myAge;
       }
     }
     let human = new Human();
@@ -15,8 +15,8 @@ describe ('Human', () => {
   })
 
   test('should return age as 20', () => {
-    const human = new Human(20);
+    let human = new Human(20);
     expect(human.myAge).toEqual(20);
   })
-})
+});
 
