@@ -26,11 +26,12 @@ describe ('Human', () => {
     expect(human.myAge).toEqual(83.33333333333334);
   })
 
-  test('should return age as undefined', () => {
+  test('should return age as 83.33', () => {
     let human = new Human(20);
     human.mercuryAge();
-    roundToTwo(myAge);
-    expect(human.myAge).toEqual(undefined);
+    human.myAge = roundToTwo(human.myAge);
+    console.log(human.myAge)
+    expect(human.myAge).toEqual(83.33);
   })
 });
 

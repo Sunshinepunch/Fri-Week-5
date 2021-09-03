@@ -8,8 +8,8 @@ export class Human {
   }
 }
 
-export function roundToTwo(num) {
-  return +(Math.round(num + "e+2")  + "e-2");
+export function roundToTwo(myAge) {
+  return +(Math.round(myAge + "e+2")  + "e-2");
 }
 
 
