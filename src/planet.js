@@ -1,7 +1,7 @@
 export class Human {
-  constructor(myAge) {
+  constructor(myAge, myLE) {
     this.myAge = myAge
-    
+    this.myLE = myLE
     this.myMercuryAge = []
     this.myVenusAge = []
     this.myMarsAge = []
