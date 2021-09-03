@@ -59,8 +59,8 @@ describe ('Human', () => {
   test('should return human with myLE of 325', () => {
     let human = new Human(20, 78);
     let myLE = human.myLE;
-    human.mercuryAge(myLE);
-    expect(human.myLE).toEqual(78);
+    human.mercuryLE(myLE);
+    expect(human.myLE).toEqual(325);
   })
 
   test('should return LE of 241.67', () => {
@@ -68,8 +68,8 @@ describe ('Human', () => {
     let myLE = human.myLE;
     let mercLE = human.mercuryAge(myLE);
     let mercAge = human.mercuryAge();
-    let timeleft = mercLE - mercAge;
-    expect(timeleft).toEqual(241.67);
+    let timeleft = 
+    expect(human.myLE).toEqual(78);
   })
 });
 
