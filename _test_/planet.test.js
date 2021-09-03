@@ -67,7 +67,7 @@ describe ('Human', () => {
     let human = new Human(20, 78);
     let mercLE = human.mercuryLE();
     let mercAge = human.mercuryAge();
-    let timeleft = 
+    let timeleft = roundToTwo(mercLE - mercAge);
     expect(timeleft).toEqual(241.67);
   })
 });

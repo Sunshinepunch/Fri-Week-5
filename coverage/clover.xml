@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1630705556978" clover="3.2.0">
-  <project timestamp="1630705556978" name="All files">
-    <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6" elements="21" coveredelements="21" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
+<coverage generated="1630706201588" clover="3.2.0">
+  <project timestamp="1630706201588" name="All files">
+    <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7" elements="27" coveredelements="27" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1"/>
     <file name="planet.js" path="C:\Users\Becket\Desktop\Fri-Week-5\src\planet.js">
-      <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+      <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
       <line num="3" count="10" type="stmt"/>
       <line num="4" count="10" type="stmt"/>
       <line num="5" count="10" type="stmt"/>
       <line num="6" count="10" type="stmt"/>
       <line num="7" count="10" type="stmt"/>
       <line num="8" count="10" type="stmt"/>
-      <line num="12" count="4" type="stmt"/>
-      <line num="13" count="4" type="stmt"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="18" count="1" type="stmt"/>
-      <line num="22" count="1" type="stmt"/>
-      <line num="23" count="1" type="stmt"/>
-      <line num="27" count="1" type="stmt"/>
-      <line num="28" count="1" type="stmt"/>
-      <line num="33" count="7" type="stmt"/>
+      <line num="12" count="2" type="stmt"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="19" count="2" type="stmt"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="21" count="2" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="41" count="8" type="stmt"/>
     </file>
   </project>
 </coverage>
