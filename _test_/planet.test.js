@@ -20,9 +20,9 @@ describe ('Human', () => {
     expect(human.myAge).toEqual(20);
   })
 
-  test('should return age as undefined', () => {
+  test('should return age as 83.33', () => {
     let human = new Human(20);
-    human.myAge = human.myAge / Human.mercuryyear();
+    human.mercuryAge();
     expect(human.myAge).toEqual(83.33);
   })
 });
