@@ -22,17 +22,19 @@ describe ('Human', () => {
 
   test('should return age as 83.33333333333334', () => {
     let human = new Human(20);
-    human.mercuryAge();
+    human.myAge /= 0.24;
     expect(human.myAge).toEqual(83.33333333333334);
   })
 
   test('should return age as 83.33', () => {
     let human = new Human(20);
-    human.mercuryAge();
-    human.myAge = roundToTwo(human.myAge);
-    console.log(human.myAge)
+    let mercAge = human.myAge / 0.24;
+    human.myAge = roundToTwo(mercAge);
+    // console.log(human.myAge)
     expect(human.myAge).toEqual(83.33);
   })
+
+  test()
 });
 
 

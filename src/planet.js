@@ -4,7 +4,8 @@ export class Human {
   }
 
   mercuryAge(myAge) {
-    this.myAge /= 0.24
+    let mercAge = myAge / 0.24;
+    myAge = roundToTwo(mercAge);
   }
 }
 
