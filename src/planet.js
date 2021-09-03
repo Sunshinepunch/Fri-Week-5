@@ -1,4 +1,4 @@
-export default class Human {
+export class Human {
   constructor(myAge) {
     this.myAge = myAge
   }
@@ -8,6 +8,9 @@ export default class Human {
   }
 }
 
+export function roundToTwo(num) {
+  return +(Math.round(num + "e+2")  + "e-2");
+}
 
 
 

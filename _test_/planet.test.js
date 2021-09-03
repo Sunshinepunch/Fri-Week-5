@@ -1,5 +1,5 @@
 import { expect, test } from '@jest/globals';
-import Human from '../src/planet.js';
+import {Human, roundToTwo } from '../src/planet.js';
 
 
 
@@ -25,6 +25,13 @@ describe ('Human', () => {
     human.mercuryAge();
     expect(human.myAge).toEqual(83.33333333333334);
   })
+
+  test('should return age as undefined', () => {
+    let human = new Human(20);
+    human.mercuryAge();
+    roundToTwo(myAge);
+    expect(human.myAge).toEqual(undefined);
+  })
 });
 
 
@@ -33,7 +40,7 @@ describe ('roundToTwo', () => {
   test('should return num as 83.33', () => {
   let num = 83.33334;
   let num2 = +(Math.round(num + "e+2") + "e-2");
-  console.log(num2);
+  // console.log(num2);
   expect(num2).toEqual(83.33)
 })
 });
