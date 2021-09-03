@@ -76,7 +76,15 @@ describe ('Human', () => {
     let mercLE = human.mercuryLE();
     let mercAge = human.mercuryAge();
     let result = timeLeft(mercLE, mercAge);
-    expect(result).toEqual();
+    expect(result).toEqual(-4.17);
+  })
+
+  test('should return console statement and 4.17', () => {
+    let human = new Human(79, 78);
+    let mercLE = human.mercuryLE();
+    let mercAge = human.mercuryAge();
+    let result = timeLeft(mercLE, mercAge);
+    expect(result).toEqual(-4.17);
   })
 });
 

@@ -42,7 +42,14 @@ export function roundToTwo(myAge) {
 }
 
 export function timeLeft(myLE,myAge) {
-  return roundToTwo(myLE - myAge);
+  let time = roundToTwo(myLE - myAge);
+  if (time == undefined) {
+    console.log("You've done something to fiddle with space-time. Put it back");
+  }else if (time > 0) {
+    return time;
+  }else if (time <= 0) {
+    console.log("Yikes. You would have died" + Math.abs(time));
+  }
 }
 
 
