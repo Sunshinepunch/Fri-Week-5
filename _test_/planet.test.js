@@ -20,10 +20,10 @@ describe ('Human', () => {
     expect(human.myAge).toEqual(20);
   })
 
-  test('should return age as 83.33', () => {
+  test('should return age as 83.33333333333334', () => {
     let human = new Human(20);
     human.mercuryAge();
-    expect(human.myAge).toEqual(83.33);
+    expect(human.myAge).toEqual(83.33333333333334);
   })
 });
 
@@ -32,8 +32,8 @@ describe ('roundToTwo', () => {
 
   test('should return num as 83.33', () => {
   let num = 83.33334;
-  let num2 = (Math.round(num + "e+2") + "e-2");
-  console.log(roundToTwo(num2));
+  let num2 = +(Math.round(num + "e+2") + "e-2");
+  console.log(num2);
   expect(num2).toEqual(83.33)
 })
 });
