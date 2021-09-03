@@ -63,15 +63,14 @@ describe ('Human', () => {
     expect(human.myLE).toEqual(325);
   })
 
-//   test('should return LE of 241.67', () => {
-//     let human = new Human(20, 78);
-//     let myLE = human.myLE;
-//     let mercLE = human.mercuryAge(myLE);
-//     let mercAge = human.mercuryAge();
-//     let timeleft = 
-//     expect(human.myLE).toEqual(78);
-//   })
-// });
+  test('should return LE of 241.67', () => {
+    let human = new Human(20, 78);
+    let mercLE = human.mercuryLE();
+    let mercAge = human.mercuryAge();
+    let timeleft = 
+    expect(timeleft).toEqual(241.67);
+  })
+});
 
 
 describe ('roundToTwo', () => {
