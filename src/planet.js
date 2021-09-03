@@ -14,6 +14,11 @@ export class Human {
     this.myMercuryAge.push(this.myAge);
   }
 
+  mercuryLE() {
+    let mercLE = this.myLE / 0.24;
+    this.myLE = roundToTwo(mercLE);
+  }
+
   venusAge() {
     let venusAge = this.myAge / 0.62;
     this.myAge = roundToTwo(venusAge);
