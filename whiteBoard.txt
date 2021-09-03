@@ -1,0 +1,29 @@
+Specs:
+
+Constructor Human with property earthage
+
+method mercuryage = age / .24
+return value
+
+method venusage = age / .62
+return value
+
+method marsage = age / 1.88
+return value
+
+method jupiterage = age / 11.86
+return value
+
+life expectancy = average life expectancy - earthage = ticktock
+ticktock / planet year = time left
+return value
+
+
+
+stretch goals:
+
+life expectancy radio buttons - male/female, smoker/nonsmoker, exercise[yes/no],
+wronged becket [yes/no]
+
+
+
