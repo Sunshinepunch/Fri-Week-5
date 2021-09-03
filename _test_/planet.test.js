@@ -24,7 +24,6 @@ describe ('Human', () => {
   test('should return age as 83.33', () => {
     let human = new Human(20);
     human.mercuryAge();
-    // console.log(human.myAge)
     expect(human.myAge).toEqual(83.33);
   })
 
@@ -44,6 +43,12 @@ describe ('Human', () => {
     let human = new Human(20);
     human.jupiterAge();
     expect(human.myAge).toEqual(1.69);
+  })
+
+  test('should return myMercuryAge array with 83.33 element', () => {
+    let human = new Human(20);
+    human.mercuryAge();
+    expect(human.myMercuryAge).toEqual([83.33]);
   })
 });
 

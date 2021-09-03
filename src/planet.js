@@ -1,11 +1,16 @@
 export class Human {
   constructor(myAge) {
     this.myAge = myAge
+    this.myMercuryAge = []
+    this.myVenusAge = []
+    this.myMarsAge = []
+    this.myJupiterAge = []
   }
 
   mercuryAge() {
     let mercAge = this.myAge / 0.24;
     this.myAge = roundToTwo(mercAge);
+    
   }
 
   venusAge() {
