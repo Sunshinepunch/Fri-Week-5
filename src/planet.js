@@ -12,6 +12,11 @@ export class Human {
     let venusAge = this.myAge / 0.62;
     this.myAge = roundToTwo(venusAge);
   }
+
+  marsAge() {
+    let marsAge = this.myAge / 1.88;
+    this.myAge = roundToTwo(marsAge);
+  }
 }
 
 export function roundToTwo(myAge) {
