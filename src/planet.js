@@ -41,6 +41,10 @@ export function roundToTwo(myAge) {
   return +(Math.round(myAge + "e+2")  + "e-2");
 }
 
+export function timeLeft(myLE,myAge) {
+  return roundToTwo(myLE - myAge);
+}
+
 
 
 

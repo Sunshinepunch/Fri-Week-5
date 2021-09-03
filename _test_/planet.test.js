@@ -1,5 +1,5 @@
 
-import {Human, roundToTwo } from '../src/planet.js';
+import {Human, roundToTwo, timeLeft } from '../src/planet.js';
 
 
 
@@ -45,11 +45,11 @@ describe ('Human', () => {
     expect(human.myAge).toEqual(1.69);
   })
 
-  // test('should return myMercuryAge array with 83.33 element', () => {
-  //   let human = new Human(20);
-  //   human.mercuryAge();
-  //   expect(human.myMercuryAge).toEqual([83.33]);
-  // })
+  test('should return myMercuryAge array with 83.33 element', () => {
+    let human = new Human(20);
+    human.mercuryAge();
+    expect(human.myMercuryAge).toEqual([83.33]);
+  })
 
   test('should intialize human with myLE of 78', () => {
     let human = new Human(20, 78);
@@ -67,8 +67,16 @@ describe ('Human', () => {
     let human = new Human(20, 78);
     let mercLE = human.mercuryLE();
     let mercAge = human.mercuryAge();
-    let timeleft = roundToTwo(mercLE - mercAge);
-    expect(timeleft).toEqual(241.67);
+    let result = timeLeft(mercLE, mercAge);
+    expect(result).toEqual(241.67);
+  })
+
+  test('should return LE of -4.17', () => {
+    let human = new Human(79, 78);
+    let mercLE = human.mercuryLE();
+    let mercAge = human.mercuryAge();
+    let result = timeLeft(mercLE, mercAge);
+    expect(result).toEqual();
   })
 });
 
