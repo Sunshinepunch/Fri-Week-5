@@ -50,6 +50,11 @@ describe ('Human', () => {
     human.mercuryAge();
     expect(human.myMercuryAge).toEqual([83.33]);
   })
+
+  test('should intialize human with myLE of 78', () => {
+    let human = new Human(20, 78);
+    expect(human.myLE).toEqual(78);
+  })
 });
 
 
@@ -58,7 +63,6 @@ describe ('roundToTwo', () => {
   test('should return num as 83.33', () => {
   let num = 83.33334;
   let num2 = +(Math.round(num + "e+2") + "e-2");
-  // console.log(num2);
   expect(num2).toEqual(83.33)
 })
 });
