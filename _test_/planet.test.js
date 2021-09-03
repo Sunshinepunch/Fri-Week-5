@@ -33,6 +33,12 @@ describe ('Human', () => {
     human.venusAge();
     expect(human.myAge).toEqual(32.26);
   })
+
+  test('should return age as 10.63', () => {
+    let human = new Human(20);
+    human.marsAge();
+    expect(human.myAge).toEqual(10.64);
+  })
 });
 
 
