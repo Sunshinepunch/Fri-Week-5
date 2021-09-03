@@ -55,6 +55,13 @@ describe ('Human', () => {
     let human = new Human(20, 78);
     expect(human.myLE).toEqual(78);
   })
+
+  test('should return human with myLE of 325', () => {
+    let human = new Human(20, 78);
+    let myLE = human.myLE;
+    human.mercuryAge(myLE);
+    expect(human.myLE).toEqual(78);
+  })
 });
 
 
