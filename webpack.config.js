@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // new line
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -8,15 +8,13 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  devtool: 'eval-source-map',  // new line
-  devServer: {                 // new line
-    contentBase: './dist'      // new line
+  devtool: 'eval-source-map',
+  devServer: {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    plugins: [new ESLintPlugin(options)]// new line
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'Fri-Week-5',
       template: './src/index.html',
       inject: 'body'
     })
@@ -33,7 +31,20 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-      }
+        loader: "eslint-loader"
+      },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ]
   }
 };
