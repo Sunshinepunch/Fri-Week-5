@@ -1,6 +1,6 @@
 Specs:
 
-Constructor Human with property earthage
+Constructor Human with property myage
 
 method mercuryage = age / .24
 return value
@@ -14,7 +14,7 @@ return value
 method jupiterage = age / 11.86
 return value
 
-life expectancy = average life expectancy - earthage = ticktock
+life expectancy = average life expectancy - myage = ticktock
 ticktock / planet year = time left
 return value
 
