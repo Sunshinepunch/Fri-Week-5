@@ -43,12 +43,12 @@ export function roundToTwo(myAge) {
 
 export function timeLeft(myLE,myAge) {
   let time = roundToTwo(myLE - myAge);
-  if (time == undefined) {
-    return("You've done something to fiddle with space-time. Put it back");
-  }else if (time > 0) {
+  if (time > 0) {
     return time;
   }else if (time <= 0) {
-    return("Yikes. You would have died " + Math.abs(time) + " years ago.");
+    return "Yikes. You would have died " + Math.abs(time) + " years ago.";
+  } else {
+    return "You've done something to fiddle with space time. Put it back."
   }
 }
 

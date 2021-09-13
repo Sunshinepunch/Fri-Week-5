@@ -1,5 +1,5 @@
 
-import {Human, roundToTwo, timeLeft } from '../src/planet.js';
+import { Human, roundToTwo, timeLeft } from '../src/planet.js';
 
 
 
@@ -15,6 +15,7 @@ describe ('Human', () => {
     expect(human.myAge).toEqual(20);
   })
 
+  // What is it accomplishing in your actual logic? What is failing?
   test('should return age as 83.33333333333334', () => {
     let human = new Human(20);
     human.myAge /= 0.24;
@@ -79,13 +80,19 @@ describe ('Human', () => {
     expect(result).toEqual(-4.170000000000016);
   })
 
-  test('should return console statement and 4.17', () => {
-    let human = new Human(79, 78);
-    let mercLE = human.mercuryLE();
-    let mercAge = human.mercuryAge();
-    // let result = timeLeft(mercLE, mercAge); code refactored for UI
-    let result = 4.17
-    expect(result).toEqual(4.17);
+  test('should return Yikes. You would have died 4.17 years ago', () => {
+    let result1 = timeLeft(325, 329.17);
+    expect(result1).toEqual("Yikes. You would have died 4.17 years ago.");
+  })
+
+  test('should return 1', () => {
+    let result1 = timeLeft(4, 3);
+    expect(result1).toEqual(1);
+  })
+
+  test('should return Yikes. You would have died 4.17 years ago', () => {
+    let result3 = timeLeft('xxy', 'we');
+    expect(result3).toEqual("You've done something to fiddle with space time. Put it back.");
   })
 });
 
